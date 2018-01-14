@@ -1,0 +1,230 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f6c72ca54c782c7216efec8e9de7edc0",
+    "packages": [
+        {
+            "name": "consistence/consistence",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/consistence/consistence.git",
+                "reference": "7164e7cd4a3ebf8aaec8d7f2552e6e0e59e0dee6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/consistence/consistence/zipball/7164e7cd4a3ebf8aaec8d7f2552e6e0e59e0dee6",
+                "reference": "7164e7cd4a3ebf8aaec8d7f2552e6e0e59e0dee6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.0"
+            },
+            "require-dev": {
+                "consistence/coding-standard": "2.0",
+                "jakub-onderka/php-console-highlighter": "0.3.2",
+                "jakub-onderka/php-parallel-lint": "0.9.2",
+                "phing/phing": "2.16",
+                "phpunit/phpunit": "6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Consistence\\": [
+                        "src"
+                    ]
+                },
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vašek Purchart",
+                    "email": "me@vasekpurchart.cz",
+                    "homepage": "http://vasekpurchart.cz"
+                }
+            ],
+            "description": "Consistence - consistent approach and additions to PHP's functionality",
+            "keywords": [
+                "array",
+                "check",
+                "enum",
+                "format",
+                "strict",
+                "time",
+                "type"
+            ],
+            "time": "2017-08-24T07:40:44+00:00"
+        },
+        {
+            "name": "ondrakoupil/csob-eapi-paygate",
+            "version": "v1.7.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ondrakoupil/csob.git",
+                "reference": "3c1f38d1e832b821c5362df3ea18d83c5cbce23d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ondrakoupil/csob/zipball/3c1f38d1e832b821c5362df3ea18d83c5cbce23d",
+                "reference": "3c1f38d1e832b821c5362df3ea18d83c5cbce23d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-openssl": "*",
+                "ondrakoupil/tools": "~0.0.5",
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "nette/tester": "dev-master",
+                "ondrakoupil/testing-utils": "~0.0.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OndraKoupil\\Csob\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Koupil",
+                    "email": "koupil@optimato.cz"
+                }
+            ],
+            "description": "PHP Client library for easy integration of ČSOB payment gateway",
+            "homepage": "https://github.com/ondrakoupil/csob",
+            "keywords": [
+                "Bank",
+                "cards",
+                "commerce",
+                "csob",
+                "merchant",
+                "pay",
+                "payment"
+            ],
+            "time": "2017-09-12T19:29:26+00:00"
+        },
+        {
+            "name": "ondrakoupil/tools",
+            "version": "v0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ondrakoupil/tools.git",
+                "reference": "778c4931ba883d86a338ea9591d48eb9bb24eb13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ondrakoupil/tools/zipball/778c4931ba883d86a338ea9591d48eb9bb24eb13",
+                "reference": "778c4931ba883d86a338ea9591d48eb9bb24eb13",
+                "shasum": ""
+            },
+            "require-dev": {
+                "nette/tester": "^1.4@dev",
+                "ondrakoupil/testing-utils": "^0.0.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "OndraKoupil\\Tools\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ondřej Koupil",
+                    "email": "koupil@optimato.cz"
+                }
+            ],
+            "description": "Just a bunch of tools for myself",
+            "time": "2015-07-27T20:41:18+00:00"
+        },
+        {
+            "name": "slevomat/csob-gateway",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slevomat/csob-gateway.git",
+                "reference": "978af9fa33eebf3bd659089fbc7214163c8ddb3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slevomat/csob-gateway/zipball/978af9fa33eebf3bd659089fbc7214163c8ddb3d",
+                "reference": "978af9fa33eebf3bd659089fbc7214163c8ddb3d",
+                "shasum": ""
+            },
+            "require": {
+                "consistence/consistence": "^1.0.0",
+                "ext-openssl": "*",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "consistence/coding-standard": "^2.0.0",
+                "guzzlehttp/guzzle": "^6.2",
+                "jakub-onderka/php-parallel-lint": "0.9.2",
+                "phing/phing": "^2.16",
+                "phpstan/phpstan": "0.8.4",
+                "phpunit/phpunit": "^6.3.0",
+                "psr/log": "^1.0",
+                "slevomat/coding-standard": "^4.0.0"
+            },
+            "suggest": {
+                "ext-curl": "cURL driver for usage of CurlDriver",
+                "guzzlehttp/guzzle": "HTTP client for usage of GuzzleHttpClient",
+                "psr/log": "Common interface for logging of requests - implementations: https://packagist.org/providers/psr/log-implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SlevomatCsobGateway\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Slevomat.cz, s.r.o.",
+                    "homepage": "http://www.slevomat.cz"
+                }
+            ],
+            "description": "CSOB payment gateway client",
+            "keywords": [
+                "card",
+                "csob",
+                "gateway",
+                "paymentgateway"
+            ],
+            "time": "2017-11-28T14:22:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
