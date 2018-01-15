@@ -1,32 +1,34 @@
 <?php
 
+require("vendor/autoload.php");
 
 use OndraKoupil\Csob\Client;
 use OndraKoupil\Csob\Config;
 use OndraKoupil\Csob\GatewayUrl;
 use OndraKoupil\Csob\Payment;
+use Nette\Neon\Neon;
+
+# load neon config file
+$config = Neon::decode(file_get_contents('config/app.neon'));
 
 if (isset($_POST['submit'])) {
     if ($_POST['text'] != "" && $_POST['cena'] != "") {
-        require("vendor/autoload.php");
-        $config = new Config(
-            "A3051azixU",
-            "keys/rsa_A3051azixU.key",
-            "keys/bank.pub",
-            "Obchůdek",
-
+        $gatewayConfig = new Config(
+            $config['gateway']['merchant_id'],
+            $config['gateway']['private_public_key_path'],
+            $config['gateway']['public_bank_key_path'],
+            $config['gateway']['shop_title'],
             // Adresa, kam se mají zákazníci vracet poté, co zaplatí
-            "http://kingtest.8u.cz/return.php",
-
+            $config['gateway']['return_path'],
             // URL adresa API - výchozí je adresa testovacího (integračního) prostředí,
             // až budete připraveni přepnout se na ostré rozhraní, sem zadáte
             // adresu ostrého API. Nezapomeňte také na ostrý veřejný klíč banky.
-            GatewayUrl::TEST_LATEST
+            !$config['gateway']['production'] ? GatewayUrl::TEST_LATEST : GatewayUrl::PRODUCTION_LATEST
         );
 
-        $client = new Client($config);
+        $client = new Client($gatewayConfig);
 
-        $payment = new Payment(mktime());
+        $payment = new Payment(time());
         $payment->addCartItem(htmlspecialchars($_POST['text']), 1, $_POST['cena'] * 100);
 
         $response = $client->paymentInit($payment);

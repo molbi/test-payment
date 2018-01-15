@@ -1,6 +1,7 @@
 {
-    "require": {
-        "slevomat/csob-gateway": "^4.1",
-        "ondrakoupil/csob-eapi-paygate": "^1.7"
-    }
+  "require": {
+    "slevomat/csob-gateway": "^4.1",
+    "ondrakoupil/csob-eapi-paygate": "^1.7",
+    "nette/neon": "^2.4"
+  }
 }
