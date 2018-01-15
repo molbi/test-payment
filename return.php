@@ -37,3 +37,16 @@ if ($response["paymentStatus"] == 7) {
 } else {
     echo "Něco se pokazilo, sakra...";
 }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ČSOB platba</title>
+</head>
+<body>
+
+
+</form>
+</body>
+</html>
